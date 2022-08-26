@@ -16,6 +16,9 @@ h1, ul, li, a, p, h2{
     
 }
 
+h1 {
+    font-size:3em;
+}
 h3{
     font-size:2.5em;
 }
@@ -130,5 +133,48 @@ h3,h4 {
     /* bottom makes it so that it comes from bottom to middle */
     bottom: 40%; 
     opacity:1;
+}
+
+.agentDetailsWrapper {
+    display:flex;
+    background-color: rgb(255, 255, 255);
+    margin:0 auto;
+}
+
+.agentDetailsWrapper-right {
+    margin-top:4rem;
+   line-height: 2.5em;
+    flex-basis:50%;
+
+}
+
+.agentDetailsWrapper-left {
+   
+    flex-basis:50%;
+    margin-top: 4rem;
+    max-height:100vh;
+    min-width:700px;
+}
+
+.agentDetails-img {
+ 
+
+    width:100%;
+    height:100%;
+    object-fit: contain;
+}
+.agentDetails-ability {
+    margin:3em 0;
+    
+}
+
+.dark_text{
+    color: #0f1923;
+}
+
+
+.role-span {
+    font-weight:500;
+    
 }
 

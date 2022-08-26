@@ -5,6 +5,7 @@ import Home from './components/Home'
 import Maps from './components/Maps';
 import Arsenal from './components/Arsenal';
 import AgentDetails from './components/AgentDetails';
+
 function App() {
   return (
     <div className="App">
@@ -12,15 +13,10 @@ function App() {
       <Routes>
         <Route
         path="/"
-        exact
-        element={<Home/>}
-        />
-        <Route
-        path="/agents"
         element={<Agents/>}
         />
         <Route
-        path="/agents/:id"
+        path="/agents/:name"
         element={<AgentDetails/>}
         />
         <Route
