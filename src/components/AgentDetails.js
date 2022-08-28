@@ -32,14 +32,14 @@ const AgentDetails = () => {
       {agent.length >0 && ( 
         <div className='agentDetailsWrapper'>
             <div className='agentDetailsWrapper-left'>
-            <img className='agentDetails-img' src={singlePic[0].url}/>
+            <img className='agentDetails-img' alt='agent-picture' src={singlePic[0].url}/>
             </div>
             <div className='agentDetailsWrapper-right'>
-                <h1>{agent[0].title} <span className='role-span'>- {agent[0].role}</span></h1>
+                <h1 className='h1-upper'>{agent[0].title} <span className='role-span'>- {agent[0].role}</span></h1>
                 <p style= {{marginTop:'25px'}}className='dark_text'>{agent[0].description}</p> 
               {agent[0].abilities.map(ability => (
                 <div className='agentDetails-ability'>
-                    <h3 className='dark_text'>{ability.ability_name}</h3>
+                    <h3 className='dark_text h3'>{ability.ability_name}</h3>
                     <p style= {{marginTop:'25px'}}  className='dark_text'>{ability.ability_description}</p>
                 </div>
               ))}

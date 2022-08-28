@@ -1,22 +1,31 @@
 import astraImg from '../val-pics/astra.png'
-import breachImg from '../val-pics/breach.png'
+import breachImg from '../val-pics/breach2.png'
 import brimstoneImg from '../val-pics/brimstone.png'
-import chamberImg from '../val-pics/chamber.png'
+import chamberImg from '../val-pics/chamber2.png'
 import cypherImg from '../val-pics/cypher.png'
 import fadeImg from '../val-pics/fade.png'
 import jettImg from '../val-pics/jett.png'
-import kayoImg from '../val-pics/kayo.png'
-import killjoyImg from '../val-pics/killjoy.png'
+import kayoImg from '../val-pics/kayo2.png'
+import killjoyImg from '../val-pics/killjoy2.png'
 import neonImg from '../val-pics/neon.png'
 import omenImg from '../val-pics/omen2.png'
 import phoenixImg from '../val-pics/phoenix.png'
 import razeImg from '../val-pics/raze.png'
 import reynaImg from '../val-pics/reyna.png'
-import sageImg from '../val-pics/sage.png'
+import sageImg from '../val-pics/sage2.png'
 import skyeImg from '../val-pics/skye.png'
 import sovaImg from '../val-pics/sova.png'
-import viperImg from '../val-pics/viper.png'
+import viperImg from '../val-pics/viper2.png'
 import yoruImg from '../val-pics/yoru.png'
+
+import pearlImg from '../map-pics/download.jpg'
+import fractureImg from '../map-pics/fracture.jpg'
+import bindImg from '../map-pics/bind.png'
+import ascentImg from '../map-pics/ascent.png'
+import breezeImg from '../map-pics/breeze.png'
+import iceboxImg from '../map-pics/icebox.jpg'
+import splitImg from '../map-pics/split.png'
+import havenImg from '../map-pics/haven.png'
 
 export const picsData = [
     {
@@ -97,6 +106,34 @@ export const picsData = [
         url: fadeImg,
         name: 'fade'
     },
-
-
 ]
+
+export const mapPics = [
+    {
+        url: pearlImg
+    },
+    {
+        url: fractureImg
+    },
+    {
+        url: breezeImg
+    },
+    {
+        url: iceboxImg
+    },
+    {
+        url: bindImg
+    },
+    {
+        url: havenImg
+    },
+    {
+        url: splitImg
+    },
+    {
+        url: ascentImg
+    },
+
+    
+]
+

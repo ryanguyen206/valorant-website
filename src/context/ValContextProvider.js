@@ -8,8 +8,9 @@ export const ValContext = createContext()
 const ValContextProvider = ({children}) => {
 
   const [allPics, setAllPics] = useState(picsData)
+  const [weapons, setWeapons] = useState()
   const [allAgents, setAllAgents] = useState([])
-  console.log(allPics)
+
   
   useEffect(() => {
     const fetchAgentsData = async () => {
@@ -17,12 +18,19 @@ const ValContextProvider = ({children}) => {
         setAllAgents(agentsData.agents)
       }
 
+      const getWeaponsData = async () => {
+        const weaponsData = await fetchData('https://valorant-agents-maps-arsenal.p.rapidapi.com/arsenal/en-us', options)
+        setWeapons(weaponsData)
+       
+    }
+    getWeaponsData();
+
     fetchAgentsData();
   
   }, [])
    
   return (
-    <ValContext.Provider value={{allPics, allAgents}}>
+    <ValContext.Provider value={{allPics, allAgents, weapons}}>
       {children}
     </ValContext.Provider>
   )
