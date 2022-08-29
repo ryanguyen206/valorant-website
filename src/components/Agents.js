@@ -10,7 +10,6 @@ const Agents = () => {
 
 const {allPics, allAgents} = useContext(ValContext)
 
-  console.log(allAgents)
   return (
    
     <div className="agentsContainer">
@@ -27,7 +26,6 @@ const {allPics, allAgents} = useContext(ValContext)
           </div>
         
         ))}
-  
     </div>
   
   )

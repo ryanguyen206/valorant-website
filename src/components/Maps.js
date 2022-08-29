@@ -30,7 +30,7 @@ const Maps = () => {
             <div className='mapContainerCard white'>
                   <img alt='specific maps from game' className='map-img white' src= {mapPics[index +1 ].url} />
                   <h2 className='bf white'>{mapo.map_name}</h2>
-                  <p className='font white' key={mapo.map_description}>{mapo.map_description}</p>
+                  <p className='sf font white' key={mapo.map_description}>{mapo.map_description}</p>
             </div>
         ))}
     </div>

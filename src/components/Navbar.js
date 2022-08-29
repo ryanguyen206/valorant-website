@@ -1,16 +1,17 @@
-import React from 'react'
-import {Link} from 'react-router-dom'
+import React, {useState} from 'react'
+
+import { GiHamburgerMenu } from 'react-icons/gi'
+import MobileNavigation from './MobileNavigation'
+import NormalNavigtation from './NormalNavigtation'
 
 const Navbar = () => {
 
+
+  
   return (
-    <div className='navbar-container'>
-        <h1><Link to='/'>Valorantpedia</Link></h1>
-          <ul className='navbar-ul'>
-            <Link to='/'><li>Agents</li></Link>
-            <Link to='/arsenal'><li>Arsenal</li></Link>
-            <Link to='/maps'><li>Maps</li></Link>
-          </ul>
+    <div>
+      <MobileNavigation/>
+      <NormalNavigtation/>
     </div>
   )
 }
