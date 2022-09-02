@@ -33,7 +33,15 @@ h3,h4 {
     color:white;
 }
 
+.filterWrapper {
+    padding:2em;
+    width:85%;
+    margin:0 auto;
+}
 
+.filter-select {
+    font-size:22px;
+}
 /* navbar styles */
 .same {
     background-color:#0F1624;
@@ -264,9 +272,7 @@ h3,h4 {
 }
 
 @media (max-width:769px) {
-   .role-span {
-   
-   }
+ 
     .agentDetailsWrapper-right {
         margin-top:5em;
     }   
@@ -274,7 +280,10 @@ h3,h4 {
 
 
 
-
+.loader {
+   position:absolute;
+   right:0;
+}
 .dark_text{
     color: #0f1923;
     font-weight:500;
@@ -324,6 +333,11 @@ h3,h4 {
 .white {
     color:white;
     
+}
+
+.filter-aresenal{
+    color:black;
+    z-index: 30;
 }
 
 .weaponContainer {

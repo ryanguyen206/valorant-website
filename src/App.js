@@ -1,7 +1,6 @@
 import {Routes, Route} from 'react-router-dom'
 import Navbar from './components/Navbar';
 import Agents from './components/Agents'
-import Home from './components/Home'
 import Maps from './components/Maps';
 import Arsenal from './components/Arsenal';
 import AgentDetails from './components/AgentDetails';
