@@ -17,6 +17,7 @@ import skyeImg from '../val-pics/skye.png'
 import sovaImg from '../val-pics/sova.png'
 import viperImg from '../val-pics/viper2.png'
 import yoruImg from '../val-pics/yoru.png'
+import harborImg from '../val-pics/harbor.png'
 
 import pearlImg from '../map-pics/download.jpg'
 import fractureImg from '../map-pics/fracture.jpg'
@@ -106,6 +107,10 @@ export const picsData = [
         url: fadeImg,
         name: 'fade'
     },
+    {
+        url: harborImg,
+        name: 'harbor'
+    }
 ]
 
 export const mapPics = [
@@ -132,8 +137,6 @@ export const mapPics = [
     },
     {
         url: ascentImg
-    },
-
-    
+    },  
 ]
 

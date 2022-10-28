@@ -1,5 +1,3 @@
-
-
 export const WeaponReducer = (state, action) => {
   switch(action.type)  {
     case "smgs":

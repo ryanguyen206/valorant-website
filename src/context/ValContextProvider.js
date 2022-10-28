@@ -1,4 +1,3 @@
-
 import React, {createContext, useState, useEffect, useReducer} from 'react'
 import {picsData} from '../utils/exportPics'
 import { options, fetchData } from '../utils/fetchData'
@@ -28,6 +27,7 @@ const ValContextProvider = ({children}) => {
     fetchAgentsData();
   }, [])
 
+  console.log(allAgents);
   //reducer to filter weapons
   const [weaponReducerState, weaponDispatch] = useReducer(WeaponReducer, {
     sidearms:false,
