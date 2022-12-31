@@ -278,7 +278,9 @@ h3,h4 {
     }   
 }
 
-
+.agentDetails-video {
+  margin-top:50px;
+}
 
 .loader {
    position:absolute;

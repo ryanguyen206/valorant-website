@@ -27,7 +27,7 @@ const ValContextProvider = ({children}) => {
     fetchAgentsData();
   }, [])
 
-  console.log(allAgents);
+  //console.log(allAgents);
   //reducer to filter weapons
   const [weaponReducerState, weaponDispatch] = useReducer(WeaponReducer, {
     sidearms:false,
@@ -37,7 +37,7 @@ const ValContextProvider = ({children}) => {
     melee:false,
     rifles:false,
   })
-   console.log(weaponReducerState)
+   //console.log(weaponReducerState)
   return (
     <ValContext.Provider value={{allPics, allAgents, weapons, weaponReducerState, weaponDispatch}}>
       {children}

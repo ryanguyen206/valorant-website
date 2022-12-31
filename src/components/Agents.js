@@ -21,7 +21,7 @@ return (
         {allAgents.map((agent, index) => (
       
           <div key={index} className='agentCardWrapper'>
-            <Link to={`/agents/${agent.agent_image.url}`}>
+                <Link to={`/agents/${allPics[index].name}`}>
               <img alt='agent-picture' className='agent-image' src={allPics[index].url}/>
   
               <div className='layer'>

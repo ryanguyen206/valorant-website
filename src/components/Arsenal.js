@@ -48,7 +48,7 @@ const Arsenal = () => {
     }
 
 
-    console.log(transformWeapons())
+   // console.log(transformWeapons())
 
     return (
 

@@ -24,23 +24,33 @@ const AgentDetails = () => {
   }, [name])
   
   const singlePic = allPics.filter(img => img.name === name)
-  console.log(agent)
+  //console.log(agent)
+
+
   
 
   return (
     <div className='agentDetailsContainer'>
       {agent.length >0 && ( 
+     
         <div className='agentDetailsWrapper'>
+          
             <div className='agentDetailsWrapper-left'>
             <img className='agentDetails-img' alt='agent-picture' src={singlePic[0].url}/>
             </div>
             <div className='agentDetailsWrapper-right'>
                 <h1 className='h1-upper'>{agent[0].title} <span className='role-span'>- {agent[0].role}</span></h1>
                 <p style= {{marginTop:'25px'}}className='dark_text'>{agent[0].description}</p> 
-              {agent[0].abilities.map(ability => (
+              {agent[0].abilities.map((ability, index) => (
                 <div className='agentDetails-ability'>
-                    <h3 className='dark_text h3'>{ability.ability_name}</h3>
+                    <h3 className='dark_text h3'>{ability.ability_name}</h3>                   
                     <p style= {{marginTop:'25px'}}  className='dark_text'>{ability.ability_description}</p>
+                    <div className="agentDetails-video">
+                      <video controls width="100%">
+                      <source src={ability.ability_video[0].video.file.url} type="video/mp4" />
+                        Sorry, your browser doesn't support embedded videos.
+                      </video>
+                    </div>
                 </div>
               ))}
 
