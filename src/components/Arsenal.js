@@ -3,6 +3,7 @@ import Form from 'react-bootstrap/Form';
 import { useContext } from 'react'
 import { ValContext } from '../context/ValContextProvider'
 import {GiHeavyBullets} from 'react-icons/gi'
+import Loader from './Loader';
 const Arsenal = () => {
 
     const {weapons, weaponReducerState, weaponDispatch} = useContext(ValContext)
@@ -19,7 +20,7 @@ const Arsenal = () => {
         weaponDispatch({type:e.target.value})
      
     }
-
+ 
   
 
     function transformWeapons() {
@@ -52,7 +53,12 @@ const Arsenal = () => {
 
     return (
 
-    <>   
+    <div>
+    
+        {onlyWeapons.length > 0 ? 
+        (
+        
+    <div>
         <div className='filterWrapper'>
             <h3 className="filter-aresenal">Filter Products</h3>
             <Form.Select className='filter-select' size="lg" onChange={(e) =>{handleReducer(e)}} aria-label="Default select example">
@@ -64,9 +70,7 @@ const Arsenal = () => {
             <option value="melee">Melee</option>
             </Form.Select>
         </div>
-    
-        {onlyWeapons.length > 0 ? 
-        (
+
         <div className='weaponContainer'>
             {transformWeapons().map(weapon => (
                 <div key={weapon.weapon_name} className='weaponCard'>
@@ -80,8 +84,11 @@ const Arsenal = () => {
                 </div>
             ))}
         </div>
-        ) : ''}
-    </>
+    </div>
+    
+        ) : <Loader/>}
+    </div>
+
  
   )
 }

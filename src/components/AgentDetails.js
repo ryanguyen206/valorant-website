@@ -23,7 +23,7 @@ const AgentDetails = () => {
     
   }, [name])
   
-  console.log(agent[0])
+  
 
 
   

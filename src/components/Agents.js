@@ -12,7 +12,7 @@ const {allPics, allAgents} = useContext(ValContext)
 
 
 
-console.log(allAgents[0]?.title)
+
 
 return (
     <div>
