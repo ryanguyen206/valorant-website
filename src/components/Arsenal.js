@@ -14,8 +14,8 @@ const Arsenal = () => {
         melee,
         rifles} = weaponReducerState
     
-    const onlyWeapons = weapons.weapons
-    
+  
+
     function handleReducer (e) {
         weaponDispatch({type:e.target.value})
      
@@ -24,7 +24,7 @@ const Arsenal = () => {
   
 
     function transformWeapons() {
-        let filteredWeapons = onlyWeapons;
+        let filteredWeapons = weapons;
 
         if (sidearms) {
             filteredWeapons = filteredWeapons.filter(gun => gun.weapon_category_machine_name === 'sidearms')
@@ -55,9 +55,9 @@ const Arsenal = () => {
 
     <div>
     
-        {onlyWeapons.length > 0 ? 
+        {weapons ? 
         (
-        
+    
     <div>
         <div className='filterWrapper'>
             <h3 className="filter-aresenal">Filter Products</h3>

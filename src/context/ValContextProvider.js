@@ -21,14 +21,14 @@ const ValContextProvider = ({children}) => {
 
       const getWeaponsData = async () => {
         const weaponsData = await fetchData('https://valorant-agents-maps-arsenal.p.rapidapi.com/arsenal/en-us', options)
-        setWeapons(weaponsData)
+        setWeapons(weaponsData.weapons)
        
     }
     getWeaponsData();
     fetchAgentsData();
   }, [])
 
-  //console.log(allAgents);
+  
   //reducer to filter weapons
   const [weaponReducerState, weaponDispatch] = useReducer(WeaponReducer, {
     sidearms:false,

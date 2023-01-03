@@ -38,7 +38,7 @@ const AgentDetails = () => {
             <img className='agentDetails-img' alt='agent-picture' src={agent[0].agent_image.url}/>
             </div>
             <div className='agentDetailsWrapper-right'>
-                <h1 className='h1-upper'>{agent[0].title} <span className='role-span'>- {agent[0].role}</span></h1>
+                <h1 className='h1-upper'>{agent[0].title} <span className='role-span'> - {agent[0].role}</span></h1>
                 <p style= {{marginTop:'25px'}}className='dark_text'>{agent[0].description}</p> 
               {agent[0].abilities.map((ability, index) => (
                 <div className='agentDetails-ability'>
