@@ -16,6 +16,7 @@ const ValContextProvider = ({children}) => {
     const fetchAgentsData = async () => {
         const agentsData = await fetchData("https://valorant-agents-maps-arsenal.p.rapidapi.com/agents/en-us", options)
         setAllAgents(agentsData.agents)
+      
       }
 
       const getWeaponsData = async () => {

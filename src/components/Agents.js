@@ -12,7 +12,7 @@ const {allPics, allAgents} = useContext(ValContext)
 
 
 
-
+console.log(allAgents[0]?.title)
 
 return (
     <div>
@@ -21,10 +21,11 @@ return (
         {allAgents.map((agent, index) => (
       
           <div key={index} className='agentCardWrapper'>
-                <Link to={`/agents/${allPics[index].name}`}>
-              <img alt='agent-picture' className='agent-image' src={allPics[index].url}/>
+                    <Link to={`/agents/${agent.title}`}>
+              <img alt='agent-picture' className='agent-image' src={agent?.agent_image.url}/>
   
               <div className='layer'>
+        
                   <h3>{agent.title}</h3>
                   <h4>{agent.role}</h4>
 
